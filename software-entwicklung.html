@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software-Entwicklung – openEHR Deutschland</title>
+  <meta name="description" content="openEHR für Entwicklerinnen und Entwickler – Plattformen, APIs, SDKs und Implementierungsguides.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logo.png" alt="openEHR Deutschland" class="site-logo">
+    </a>
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Navigation öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
+        <li><a href="software-entwicklung.html" class="active">Software-Entwicklung</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Entwicklung</span>
+      <h1>Software-Entwicklung mit openEHR</h1>
+      <p>Technische Ressourcen, Plattformen und Best Practices für die Integration von openEHR in Ihre Anwendungen.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="page-content">
+
+      <h2>Architektur im Überblick</h2>
+      <p>openEHR definiert eine klare, schichtenbasierte Architektur für elektronische Patientenakten:</p>
+      <ul>
+        <li><strong>Informationsmodell</strong> – wie klinische Daten prinzipiell gespeichert werden</li>
+        <li><strong>Archetyp-Formalismus</strong> – was dokumentiert wird (z.&nbsp;B. Blutdruckmessung)</li>
+        <li><strong>AQL</strong> – Archetype Query Language als semantische Abfragesprache</li>
+        <li><strong>REST API</strong> – standardisierte Schnittstellen für alle wesentlichen Operationen</li>
+      </ul>
+
+      <h2>Verfügbare Plattformen</h2>
+      <p>Mehrere Open-Source- und kommerzielle Plattformen implementieren den openEHR-Standard:</p>
+
+      <h3>EHRbase</h3>
+      <p>
+        Eine Java-basierte Open-Source-Implementierung, die vollständig den openEHR-Standard unterstützt.
+        REST API, AQL-Support, Docker-ready.
+      </p>
+      <p><a href="https://github.com/ehrbase/ehrbase" target="_blank" rel="noopener">github.com/ehrbase/ehrbase</a></p>
+
+      <h3>Better Platform</h3>
+      <p>Kommerzielle openEHR-Plattform mit umfangreichem SDK-Support.</p>
+
+      <h3>Archetype Designer</h3>
+      <p>Webbasiertes Tool zur Erstellung und Verwaltung von Archetypen und Templates.</p>
+      <p><a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener">tools.openehr.org/designer</a></p>
+
+      <h2>REST API</h2>
+      <p>Die openEHR REST API erlaubt:</p>
+      <ul>
+        <li>EHR anlegen und verwalten</li>
+        <li>Compositions speichern und abrufen</li>
+        <li>AQL-Abfragen ausführen</li>
+        <li>Demografische Daten verwalten</li>
+      </ul>
+      <p>
+        <a href="https://specifications.openehr.org/releases/ITS-REST/latest/" target="_blank" rel="noopener">
+          Spezifikation: specifications.openehr.org
+        </a>
+      </p>
+
+      <h2>Community &amp; Support</h2>
+      <ul>
+        <li><a href="https://discourse.openehr.org" target="_blank" rel="noopener">openEHR Discourse Forum</a></li>
+        <li><a href="https://openehr.slack.com" target="_blank" rel="noopener">openEHR Slack</a></li>
+        <li>Nationale Meetups und Workshops über openEHR Deutschland</li>
+      </ul>
+
+      <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="mitgliedschaft.html" class="btn btn-primary">Mitglied werden</a>
+        <a href="https://specifications.openehr.org" class="btn btn-outline" target="_blank" rel="noopener">Spezifikationen</a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <img src="assets/images/logo.png" alt="openEHR Deutschland" class="footer-logo">
+      <p class="footer-tagline">Die nationale Community für offene, interoperable elektronische Patientenakten.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="https://www.openehr.org" target="_blank" rel="noopener">openEHR International</a></li>
+        <li><a href="https://ckm.openehr.org" target="_blank" rel="noopener">Clinical Knowledge Manager</a></li>
+        <li><a href="https://specifications.openehr.org" target="_blank" rel="noopener">Spezifikationen</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>openEHR Deutschland e.V.<br>
+      <a href="mailto:info@openehr.de">info@openehr.de</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2025 openEHR Deutschland e.V.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

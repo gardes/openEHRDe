@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:\\\\Users\\\\Severin\\\\repos\\\\openEHRDe\" && python -c \"import markitdown; print\\('markitdown available'\\)\" 2>&1 || python -c \"from pptx import Presentation; print\\('pptx available'\\)\" 2>&1)",
+      "Bash(pip install:*)",
+      "Bash(mkdir -p /c/Users/Severin/repos/openEHRDe/_layouts /c/Users/Severin/repos/openEHRDe/_includes /c/Users/Severin/repos/openEHRDe/assets/css /c/Users/Severin/repos/openEHRDe/assets/js /c/Users/Severin/repos/openEHRDe/assets/images/members /c/Users/Severin/repos/openEHRDe/pages && cp /c/Users/Severin/repos/openEHRDe/logo.png /c/Users/Severin/repos/openEHRDe/assets/images/logo.png)"
+    ]
+  }
+}
