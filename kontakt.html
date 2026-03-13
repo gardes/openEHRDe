@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – openEHR Deutschland</title>
+  <meta name="description" content="Kontaktieren Sie openEHR Deutschland e.V. – per E-Mail oder im Discourse-Forum.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logo.png" alt="openEHR Deutschland" class="site-logo">
+    </a>
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Navigation öffnen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Kontakt</span>
+      <h1>Sprechen Sie uns an</h1>
+      <p>Wir freuen uns über Fragen, Feedback und Interesse an openEHR Deutschland.</p>
+    </div>
+  </section>
+
+  <!-- Kontaktformular – weiß -->
+  <section class="content-section bg-white">
+    <div class="container" style="max-width: 680px;">
+      <div class="section-intro">
+        <span class="section-label">Kontaktformular</span>
+        <h2>Schreiben Sie uns</h2>
+        <p>Wir freuen uns von Ihnen zu hören! Füllen Sie das Formular aus – wir melden uns so schnell wie möglich.</p>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+        <div class="cf-row cf-row--2">
+          <div class="cf-field">
+            <label for="cf-first">Vorname <span class="cf-req">*</span></label>
+            <input type="text" id="cf-first" name="vorname" required placeholder="Max">
+          </div>
+          <div class="cf-field">
+            <label for="cf-last">Nachname <span class="cf-req">*</span></label>
+            <input type="text" id="cf-last" name="nachname" required placeholder="Mustermann">
+          </div>
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-email">E-Mail-Adresse <span class="cf-req">*</span></label>
+            <input type="email" id="cf-email" name="email" required placeholder="max@beispiel.de">
+          </div>
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-topic">Thema <span class="cf-req">*</span></label>
+            <select id="cf-topic" name="thema" required>
+              <option value="" disabled selected>Bitte wählen Sie ein Thema</option>
+              <option>Mitgliedschaft</option>
+              <option>Klinische Modellierung</option>
+              <option>Software-Entwicklung</option>
+              <option>Events &amp; Kooperationen</option>
+              <option>Newsletter</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cf-message">Nachricht <span class="cf-req">*</span></label>
+            <textarea id="cf-message" name="nachricht" required rows="5" placeholder="Ihre Nachricht an uns ..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+        <p class="cf-note">Mit dem Absenden stimmen Sie zu, dass wir Ihre Daten zur Bearbeitung Ihrer Anfrage verwenden.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Discourse – grau-hell -->
+  <section class="content-section bg-gray-light">
+    <div class="container" style="max-width: 680px;">
+      <div class="section-intro">
+        <span class="section-label">Community</span>
+        <h2>Lieber im Forum?</h2>
+        <p>Die openEHR Deutschland Community ist auch im Discourse-Forum aktiv – ideal für öffentliche Diskussionen und schnellen Austausch.</p>
+      </div>
+      <a class="info-card" href="https://discourse.openehr.org/c/openehr-affiliates/openehr-de-private/140" target="_blank" rel="noopener" style="text-decoration: none; display: block;">
+        <div class="goal-icon">💬</div>
+        <h3>Discourse-Forum</h3>
+        <p style="margin-bottom: 12px;">openehr-de-private – der offizielle Kanal der deutschen openEHR-Community.</p>
+        <span class="card-link">Forum öffnen →</span>
+      </a>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <img src="assets/images/logo.png" alt="openEHR Deutschland" class="footer-logo">
+      <p class="footer-tagline">Die nationale Community für offene, interoperable elektronische Patientenakten.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="https://www.openehr.org" target="_blank" rel="noopener">openEHR International</a></li>
+        <li><a href="https://ckm.openehr.org" target="_blank" rel="noopener">Clinical Knowledge Manager</a></li>
+        <li><a href="https://specifications.openehr.org" target="_blank" rel="noopener">Spezifikationen</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <p>openEHR Deutschland e.V.<br>
+      <a href="mailto:info@openehr.de">info@openehr.de</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2025 openEHR Deutschland e.V.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

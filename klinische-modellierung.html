@@ -21,12 +21,13 @@
       <button class="nav-toggle" aria-label="Navigation öffnen">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-list">
+            <ul class="nav-list">
         <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
-        <li><a href="klinische-modellierung.html" class="active">Klinische Modellierung</a></li>
-        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="klinische-modellierung.html" class="active">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -41,66 +42,141 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="page-content">
-
-      <h2>Was ist klinische Modellierung?</h2>
-      <p>
-        openEHR trennt klar zwischen technischer Infrastruktur und klinischem Inhalt. Klinische Modelle
-        werden als <strong>Archetypen</strong> formalisiert – sie beschreiben, welche Daten für einen bestimmten
-        klinischen Sachverhalt dokumentiert werden sollen (z.&nbsp;B. Blutdruck, Diagnose, Medikation).
-      </p>
-      <p>
-        <strong>Templates</strong> kombinieren mehrere Archetypen zu einem vollständigen Dokumentationsformular
-        für einen spezifischen klinischen Anwendungsfall.
-      </p>
-
-      <h2>International: Clinical Knowledge Manager (CKM)</h2>
-      <p>
-        Der CKM ist die zentrale Plattform für kollaborative Entwicklung, Governance und
-        Veröffentlichung internationaler klinischer Inhaltsmodelle:
-      </p>
-      <ul>
-        <li>Hunderte fertige, international abgestimmte Archetypen</li>
-        <li>Kollaborativer Review-Prozess mit Kliniker:innen weltweit</li>
-        <li>Direkt einsetzbar in neuen Projekten</li>
-      </ul>
-      <p><a href="https://ckm.openehr.org" target="_blank" rel="noopener">ckm.openehr.org</a></p>
-
-      <h2>National: Anpassung und Erweiterung</h2>
-      <p>Die internationale Basis reduziert den nationalen Entwicklungsaufwand erheblich:</p>
-
-      <h3>Was national getan wird</h3>
-      <ul>
-        <li><strong>Templates erstellen</strong> – passend für den deutschen Kontext</li>
-        <li><strong>Internationale Modelle erweitern</strong> – falls nationale Besonderheiten notwendig</li>
-        <li><strong>Fehlende Modelle neu erstellen</strong> – und als Feedback in die internationale Community einbringen</li>
-        <li><strong>Nationale Arbeitsgruppen</strong> – koordiniert durch openEHR Deutschland e.V.</li>
-      </ul>
-
-      <h2>Werkzeuge</h2>
-
-      <h3>Archetype Designer</h3>
-      <p>Webbasierter Editor zur Erstellung und Bearbeitung von Archetypen und Templates.</p>
-      <p><a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener">tools.openehr.org/designer</a></p>
-
-      <h3>ADL Workbench</h3>
-      <p>Referenzimplementierung des Archetype Definition Language (ADL) Parsers.</p>
-
-      <h2>Einstieg</h2>
-      <ol style="padding-left: 24px; margin-bottom: 16px;">
-        <li style="margin-bottom: 8px;">Registrieren Sie sich beim <a href="https://ckm.openehr.org" target="_blank" rel="noopener">CKM</a> und erkunden Sie vorhandene Archetypen</li>
-        <li style="margin-bottom: 8px;">Nutzen Sie den <a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener">Archetype Designer</a> für eigene Templates</li>
-        <li style="margin-bottom: 8px;">Treten Sie der openEHR Deutschland Arbeitsgruppe Modellierung bei</li>
-      </ol>
-
-      <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
-        <a href="mitgliedschaft.html" class="btn btn-primary">Arbeitsgruppe beitreten</a>
-        <a href="https://ckm.openehr.org" class="btn btn-outline" target="_blank" rel="noopener">CKM öffnen</a>
+  <!-- Was ist Modellierung – weiß -->
+  <section class="content-section bg-white">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Grundlagen</span>
+        <h2>Was ist klinische Modellierung?</h2>
+        <p>openEHR trennt klar zwischen technischer Infrastruktur und klinischem Inhalt. Klinische Modelle werden als <strong>Archetypen</strong> formalisiert – sie beschreiben, welche Daten für einen bestimmten klinischen Sachverhalt dokumentiert werden sollen (z.&nbsp;B. Blutdruck, Diagnose, Medikation).</p>
+        <p><strong>Templates</strong> kombinieren mehrere Archetypen zu einem vollständigen Dokumentationsformular für einen spezifischen klinischen Anwendungsfall.</p>
       </div>
-
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon">🧬</div>
+          <div><h3>Archetypen</h3><p>Formale Modelle für klinische Konzepte (z.&nbsp;B. Blutdruck, Diagnose, Medikation)</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">📋</div>
+          <div><h3>Templates</h3><p>Kombinationen von Archetypen für spezifische klinische Anwendungsfälle</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🌍</div>
+          <div><h3>Internationaler Standard</h3><p>Hunderte abgestimmte Modelle aus der weltweiten klinischen Community</p></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- CKM – blau-hell -->
+  <section class="content-section bg-blue-light">
+    <div class="container content-2col">
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon">✅</div>
+          <div><h3>Fertige Archetypen</h3><p>Hunderte international abgestimmte Modelle direkt einsatzbereit</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🤝</div>
+          <div><h3>Kollaborativer Review</h3><p>Gemeinsame Qualitätssicherung mit Kliniker:innen weltweit</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🚀</div>
+          <div><h3>Sofort einsetzbar</h3><p>Direkt verwendbar in neuen Projekten ohne Eigenentwicklung</p></div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">International</span>
+        <h2>Clinical Knowledge Manager</h2>
+        <p>Der CKM ist die zentrale Plattform für kollaborative Entwicklung, Governance und Veröffentlichung internationaler klinischer Inhaltsmodelle.</p>
+        <a href="https://ckm.openehr.org" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 24px;">CKM öffnen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- National – grau-hell -->
+  <section class="content-section bg-gray-light">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">National</span>
+        <h2>Anpassung für Deutschland</h2>
+        <p>Die internationale Basis reduziert den nationalen Entwicklungsaufwand erheblich. openEHR Deutschland koordiniert die nationale Modellierungsarbeit.</p>
+      </div>
+      <div class="card-grid-3">
+        <div class="info-card">
+          <div class="goal-icon">📐</div>
+          <h3>Templates erstellen</h3>
+          <p>Passend für den deutschen Kontext und nationale Anforderungen</p>
+        </div>
+        <div class="info-card">
+          <div class="goal-icon">🔧</div>
+          <h3>Modelle erweitern</h3>
+          <p>Internationale Archetypen um nationale Besonderheiten ergänzen</p>
+        </div>
+        <div class="info-card">
+          <div class="goal-icon">🌐</div>
+          <h3>Zurück beitragen</h3>
+          <p>Neue Modelle als Feedback in die internationale Community einbringen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Werkzeuge + Einstieg – weiß -->
+  <section class="content-section bg-white">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Werkzeuge</span>
+        <h2>Tools für Modellierer</h2>
+        <div class="info-card" style="margin-top: 24px; margin-bottom: 16px;">
+          <div class="goal-icon">✏️</div>
+          <h3>Archetype Designer</h3>
+          <p>Webbasierter Editor zur Erstellung und Bearbeitung von Archetypen und Templates.</p>
+          <a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener" class="card-link">tools.openehr.org/designer →</a>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Einstieg</span>
+        <h2>In drei Schritten starten</h2>
+        <ol class="steps-list">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <strong>CKM erkunden</strong>
+              <p>Registrieren Sie sich beim <a href="https://ckm.openehr.org" target="_blank" rel="noopener">CKM</a> und erkunden Sie vorhandene Archetypen</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <strong>Templates erstellen</strong>
+              <p>Nutzen Sie den <a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener">Archetype Designer</a> für eigene Templates</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <strong>Arbeitsgruppe beitreten</strong>
+              <p>Treten Sie einer deutschen oder internationalen Arbeitsgruppe Modellierung bei – gemeinsam mit Kliniker:innen und Fachexpert:innen</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA – blau -->
+  <section class="content-section bg-blue-grad" style="text-align: center;">
+    <div class="container">
+      <h2 style="color: var(--white); margin-bottom: 16px;">Gemeinsam modellieren</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; max-width: 520px; margin: 0 auto 32px;">Werden Sie Teil der nationalen Arbeitsgruppe und gestalten Sie klinische Datenmodelle für Deutschland.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="mitgliedschaft.html" class="btn btn-orange">Arbeitsgruppe beitreten</a>
+        <a href="https://ckm.openehr.org" class="btn" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.35);" target="_blank" rel="noopener">CKM öffnen</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -113,8 +189,8 @@
       <h4>Navigation</h4>
       <ul>
         <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
       </ul>

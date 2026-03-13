@@ -21,12 +21,13 @@
       <button class="nav-toggle" aria-label="Navigation öffnen">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-list">
+            <ul class="nav-list">
         <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html" class="active">Software-Entwicklung</a></li>
-        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
-        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html" class="active">Software-Entwicklung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -41,63 +42,102 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="page-content">
+  <!-- Plattformen – weiß -->
+  <section class="content-section bg-white">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">Ökosystem</span>
+        <h2>Verfügbare Plattformen</h2>
+        <p>Open-Source- und kommerzielle Plattformen implementieren den openEHR-Standard vollständig.</p>
+      </div>
+      <div class="card-grid-3">
+        <a class="info-card" href="https://github.com/ehrbase/ehrbase" target="_blank" rel="noopener" style="text-decoration:none; display:block;">
+          <div class="goal-icon">⚙️</div>
+          <h3>EHRbase <span style="font-size:0.75rem; font-weight:500; color:var(--gray-mid);">Open Source</span></h3>
+          <p>Java-basierte Open-Source-Implementierung. REST API, AQL-Support, Docker-ready.</p>
+          <span class="card-link" style="margin-top:8px; display:block;">github.com/ehrbase →</span>
+        </a>
+        <a class="info-card" href="https://www.better.care/de/startseite/" target="_blank" rel="noopener" style="text-decoration:none; display:block;">
+          <div class="goal-icon">🏢</div>
+          <h3>Better Platform <span style="font-size:0.75rem; font-weight:500; color:var(--gray-mid);">Sandbox</span></h3>
+          <p>Kommerzielle openEHR-Plattform mit kostenloser Sandbox-Umgebung zum Ausprobieren.</p>
+          <span class="card-link">better.care →</span>
+        </a>
+        <a class="info-card" href="https://tools.openehr.org/designer/" target="_blank" rel="noopener" style="text-decoration:none; display:block;">
+          <div class="goal-icon">✏️</div>
+          <h3>Archetype Designer</h3>
+          <p>Webbasiertes Tool zur Erstellung und Verwaltung von Archetypen und Templates.</p>
+          <span class="card-link">tools.openehr.org →</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <h2>Architektur im Überblick</h2>
-      <p>openEHR definiert eine klare, schichtenbasierte Architektur für elektronische Patientenakten:</p>
-      <ul>
-        <li><strong>Informationsmodell</strong> – wie klinische Daten prinzipiell gespeichert werden</li>
-        <li><strong>Archetyp-Formalismus</strong> – was dokumentiert wird (z.&nbsp;B. Blutdruckmessung)</li>
-        <li><strong>AQL</strong> – Archetype Query Language als semantische Abfragesprache</li>
-        <li><strong>REST API</strong> – standardisierte Schnittstellen für alle wesentlichen Operationen</li>
-      </ul>
+  <!-- Architektur – blau-hell -->
+  <section class="content-section bg-blue-light">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Grundlagen</span>
+        <h2>Architektur im Überblick</h2>
+        <p>openEHR definiert eine klare, schichtenbasierte Architektur für elektronische Patientenakten. Jede Schicht hat eine klar definierte Aufgabe – von der technischen Speicherung bis zur semantischen Abfrage.</p>
+      </div>
+      <div class="feat-list">
+        <a class="feat-item" href="https://specifications.openehr.org/releases/QUERY/latest/" target="_blank" rel="noopener" style="text-decoration:none;">
+          <div class="feat-icon">🔍</div>
+          <div><h3>AQL</h3><p>Archetype Query Language als semantische Abfragesprache</p></div>
+        </a>
+        <a class="feat-item" href="https://specifications.openehr.org/releases/ITS-REST/Release-1.0.3/overview.html" target="_blank" rel="noopener" style="text-decoration:none;">
+          <div class="feat-icon">🔗</div>
+          <div><h3>REST API</h3><p>Standardisierte Schnittstellen für alle wesentlichen Operationen</p></div>
+        </a>
+        <a class="feat-item" href="https://specifications.openehr.org/releases/RM/latest/" target="_blank" rel="noopener" style="text-decoration:none;">
+          <div class="feat-icon">🗄️</div>
+          <div><h3>Informationsmodell</h3><p>Wie klinische Daten prinzipiell gespeichert werden</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <h2>Verfügbare Plattformen</h2>
-      <p>Mehrere Open-Source- und kommerzielle Plattformen implementieren den openEHR-Standard:</p>
-
-      <h3>EHRbase</h3>
-      <p>
-        Eine Java-basierte Open-Source-Implementierung, die vollständig den openEHR-Standard unterstützt.
-        REST API, AQL-Support, Docker-ready.
-      </p>
-      <p><a href="https://github.com/ehrbase/ehrbase" target="_blank" rel="noopener">github.com/ehrbase/ehrbase</a></p>
-
-      <h3>Better Platform</h3>
-      <p>Kommerzielle openEHR-Plattform mit umfangreichem SDK-Support.</p>
-
-      <h3>Archetype Designer</h3>
-      <p>Webbasiertes Tool zur Erstellung und Verwaltung von Archetypen und Templates.</p>
-      <p><a href="https://tools.openehr.org/designer/" target="_blank" rel="noopener">tools.openehr.org/designer</a></p>
-
-      <h2>REST API</h2>
-      <p>Die openEHR REST API erlaubt:</p>
-      <ul>
+  <!-- REST API – grau-hell -->
+  <section class="content-section bg-gray-light">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Schnittstelle</span>
+        <h2>REST API</h2>
+        <p>Die openEHR REST API bietet standardisierte Schnittstellen für alle wesentlichen Operationen – von der EHR-Verwaltung bis zu komplexen semantischen Abfragen.</p>
+        <a href="https://specifications.openehr.org/releases/ITS-REST/Release-1.0.3/overview.html" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 24px;">Spezifikation ansehen</a>
+      </div>
+      <ul class="check-list">
         <li>EHR anlegen und verwalten</li>
         <li>Compositions speichern und abrufen</li>
         <li>AQL-Abfragen ausführen</li>
         <li>Demografische Daten verwalten</li>
       </ul>
-      <p>
-        <a href="https://specifications.openehr.org/releases/ITS-REST/latest/" target="_blank" rel="noopener">
-          Spezifikation: specifications.openehr.org
-        </a>
-      </p>
-
-      <h2>Community &amp; Support</h2>
-      <ul>
-        <li><a href="https://discourse.openehr.org" target="_blank" rel="noopener">openEHR Discourse Forum</a></li>
-        <li><a href="https://openehr.slack.com" target="_blank" rel="noopener">openEHR Slack</a></li>
-        <li>Nationale Meetups und Workshops über openEHR Deutschland</li>
-      </ul>
-
-      <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
-        <a href="mitgliedschaft.html" class="btn btn-primary">Mitglied werden</a>
-        <a href="https://specifications.openehr.org" class="btn btn-outline" target="_blank" rel="noopener">Spezifikationen</a>
-      </div>
-
     </div>
-  </div>
+  </section>
+
+  <!-- Community + CTA – blau -->
+  <section class="content-section bg-blue-grad">
+    <div class="container content-2col" style="align-items: center;">
+      <div>
+        <span class="section-label" style="color: rgba(255,255,255,0.65);">Austausch</span>
+        <h2 style="color: var(--white); margin-bottom: 20px;">Community &amp; Support</h2>
+        <ul class="dark-links">
+          <li><a href="https://discourse.openehr.org" target="_blank" rel="noopener">openEHR Discourse Forum</a></li>
+          <li><a href="https://openehr.slack.com" target="_blank" rel="noopener">openEHR Slack</a></li>
+          <li>Nationale Meetups und Workshops über openEHR Deutschland</li>
+        </ul>
+      </div>
+      <div>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; margin-bottom: 28px;">Werden Sie Teil der deutschen openEHR-Community und gestalten Sie die Zukunft der Gesundheits-IT mit.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="mitgliedschaft.html" class="btn btn-orange">Mitglied werden</a>
+          <a href="https://specifications.openehr.org" class="btn" style="background: rgba(255,255,255,0.15); color: white; border-color: rgba(255,255,255,0.35);" target="_blank" rel="noopener">Spezifikationen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -110,8 +150,8 @@
       <h4>Navigation</h4>
       <ul>
         <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
       </ul>

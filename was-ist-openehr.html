@@ -21,12 +21,13 @@
       <button class="nav-toggle" aria-label="Navigation öffnen">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-list">
+            <ul class="nav-list">
         <li><a href="was-ist-openehr.html" class="active">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
-        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
-        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
+        <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </div>
@@ -41,75 +42,138 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="page-content">
-
-      <h2>Die Idee hinter openEHR</h2>
-      <p>
-        openEHR ist eine gemeinnützige Organisation, die technische Standards für eine offene,
-        herstellerunabhängige Plattformarchitektur für EHRs (Electronic Health Records) sowie
-        domänenspezifische klinische Modelle für die Inhaltsdefinition veröffentlicht.
-      </p>
-      <p>Die wichtigsten Architekturprinzipien:</p>
-      <ul>
-        <li><strong>Keine Datensilos</strong> – stattdessen eine lebenslange, patientenzentrierte, gemeinsam genutzte Akte</li>
-        <li><strong>Klare Trennung</strong> zwischen klinischen und technischen Aspekten</li>
-        <li><strong>Zukunftssichere Daten</strong> und Unterstützung für klinische Prozesse und Forschung</li>
-      </ul>
-
-      <h2>Geschichte</h2>
-      <ul>
-        <li><strong>2003</strong> – Gründung der openEHR Foundation</li>
-        <li><strong>2019</strong> – Umwandlung in openEHR International (CIC – Community Interest Company)</li>
-      </ul>
-      <p><a href="https://www.openehr.org" target="_blank" rel="noopener">www.openehr.org</a></p>
-
-      <h2>openEHR als Standardisierungsorganisation (SDO)</h2>
-      <p>
-        openEHR International ist Vollmitglied des <strong>Joint Initiative Council (JIC)</strong> gemeinsam mit:
-      </p>
-      <ul>
-        <li>HL7 International</li>
-        <li>SNOMED International</li>
-        <li>LOINC</li>
-        <li>DICOM</li>
-        <li>ISO/TC215</li>
-      </ul>
-      <p>
-        Zudem bestehen enge Kooperationen mit der HL7 FHIR-Community ("Converge and Collaborate")
-        und ein SNOMED Collaboration Agreement.
-      </p>
-
-      <h2>Die vier openEHR-Programme</h2>
-      <ul>
-        <li><strong>Spezifikationen</strong> – technische Standards und Referenzimplementierungen</li>
-        <li><strong>Klinische Modelle</strong> – Archetypen und Templates im CKM</li>
-        <li><strong>Community</strong> – internationale Netzwerke und Affiliates</li>
-        <li><strong>Plattformen &amp; Produkte</strong> – zertifizierte Implementierungen</li>
-      </ul>
-
-      <h2>Spezifikationen</h2>
-      <ul>
-        <li>EHR-Architektur – Informationsmodell für klinische Beobachtungen</li>
-        <li>Archetyp-Formalismus (ADL) – Formalsprache für klinisches Domänenwissen</li>
-        <li>AQL – Archetype Query Language</li>
-        <li>REST API – standardisierte Schnittstellen</li>
-      </ul>
-      <p><a href="https://specifications.openehr.org" target="_blank" rel="noopener">specifications.openehr.org</a></p>
-
-      <h2>openEHR in Deutschland</h2>
-      <p>
-        openEHR ist in Deutschland bereits in rund <strong>8&nbsp;% der Kliniken</strong> im Einsatz und bildet die
-        Grundlage für bedeutende Initiativen wie die Medizininformatik-Initiative (MII) und HiGHmed.
-      </p>
-
-      <div style="margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap;">
-        <a href="software-entwicklung.html" class="btn btn-primary">Für Entwickler:innen</a>
-        <a href="klinische-modellierung.html" class="btn btn-outline">Für Kliniker:innen</a>
+  <!-- Idee & Prinzipien – weiß -->
+  <section class="content-section bg-white">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Die Idee</span>
+        <h2>Offen. Herstellerunabhängig. Interoperabel.</h2>
+        <p>openEHR ist eine gemeinnützige Organisation, die technische Standards für eine offene, herstellerunabhängige Plattformarchitektur für elektronische Patientenakten sowie klinische Modelle für die Inhaltsdefinition veröffentlicht.</p>
+        <a href="https://www.openehr.org" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 20px;">openehr.org</a>
       </div>
-
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon">🚫</div>
+          <div><h3>Keine Datensilos</h3><p>Lebenslange, patientenzentrierte, gemeinsam genutzte Akte statt isolierter Systeme</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">✂️</div>
+          <div><h3>Klare Trennung</h3><p>Klinische Inhalte und technische Infrastruktur sind sauber voneinander getrennt</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🔮</div>
+          <div><h3>Zukunftssichere Daten</h3><p>Unterstützung für klinische Prozesse, Forschung und KI-Anwendungen</p></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Geschichte & SDO – blau-hell -->
+  <section class="content-section bg-blue-light">
+    <div class="container content-2col">
+      <div>
+        <span class="section-label">Geschichte</span>
+        <h2>Von der Foundation zur internationalen SDO</h2>
+        <div class="feat-list" style="margin-top: 24px;">
+          <div class="feat-item">
+            <div class="feat-icon" style="font-size:1rem; font-weight:700; color:var(--blue);">2003</div>
+            <div><h3>Gründung</h3><p>Gründung der openEHR Foundation</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" style="font-size:1rem; font-weight:700; color:var(--blue);">2019</div>
+            <div><h3>openEHR International</h3><p>Umwandlung in eine Community Interest Company (CIC)</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Standardisierung</span>
+        <h2>Vollmitglied im Joint Initiative Council</h2>
+        <p>openEHR International ist Vollmitglied des <strong>JIC</strong> – gemeinsam mit den wichtigsten Gesundheits-IT-Standards weltweit:</p>
+        <div class="card-grid-3" style="margin-top: 20px; grid-template-columns: 1fr 1fr;">
+          <div class="info-card" style="padding: 16px 20px;">
+            <h3 style="margin: 0;">HL7 International</h3>
+          </div>
+          <div class="info-card" style="padding: 16px 20px;">
+            <h3 style="margin: 0;">SNOMED International</h3>
+          </div>
+          <div class="info-card" style="padding: 16px 20px;">
+            <h3 style="margin: 0;">LOINC</h3>
+          </div>
+          <div class="info-card" style="padding: 16px 20px;">
+            <h3 style="margin: 0;">DICOM</h3>
+          </div>
+          <div class="info-card" style="padding: 16px 20px;">
+            <h3 style="margin: 0;">ISO/TC215</h3>
+          </div>
+        </div>
+        <p style="margin-top: 16px; font-size: 0.9rem;">Enge Kooperation mit HL7 FHIR („Converge and Collaborate") und SNOMED Collaboration Agreement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vier Programme – grau-hell -->
+  <section class="content-section bg-gray-light">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">Ökosystem</span>
+        <h2>Die vier openEHR-Programme</h2>
+      </div>
+      <div class="card-grid-3" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="info-card">
+          <div class="goal-icon">📄</div>
+          <h3>Spezifikationen</h3>
+          <p>Technische Standards und Referenzimplementierungen</p>
+          <a href="https://specifications.openehr.org" target="_blank" rel="noopener" class="card-link">specifications.openehr.org →</a>
+        </div>
+        <div class="info-card">
+          <div class="goal-icon">🧬</div>
+          <h3>Klinische Modelle</h3>
+          <p>Archetypen und Templates im Clinical Knowledge Manager</p>
+          <a href="https://ckm.openehr.org" target="_blank" rel="noopener" class="card-link">ckm.openehr.org →</a>
+        </div>
+        <div class="info-card">
+          <div class="goal-icon">🌐</div>
+          <h3>Community</h3>
+          <p>Internationale Netzwerke, Affiliates und nationale Gruppen</p>
+        </div>
+        <div class="info-card">
+          <div class="goal-icon">⚙️</div>
+          <h3>Plattformen</h3>
+          <p>Zertifizierte Implementierungen und Produkte</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- openEHR in Deutschland – weiß -->
+  <section class="content-section bg-white">
+    <div class="container content-2col" style="align-items: center;">
+      <div>
+        <span class="section-label">Deutschland</span>
+        <h2>openEHR in Deutschland</h2>
+        <p>openEHR ist bereits in rund <strong>8&nbsp;% der deutschen Kliniken</strong> im Einsatz und bildet die Grundlage für bedeutende nationale Initiativen.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px;">
+          <a href="software-entwicklung.html" class="btn btn-primary">Für Entwickler:innen</a>
+          <a href="klinische-modellierung.html" class="btn btn-outline">Für Kliniker:innen</a>
+        </div>
+      </div>
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon">🏥</div>
+          <div><h3>Medizininformatik-Initiative</h3><p>MII nutzt openEHR als Grundlage für föderierte Forschungsdaten</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🔬</div>
+          <div><h3>HiGHmed</h3><p>Eines der größten openEHR-basierten Konsortien in Deutschland</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon">🇩🇪</div>
+          <div><h3>openEHR Deutschland e.V.</h3><p>Nationale Anlaufstelle, Community und Interessenvertretung</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -122,8 +186,8 @@
       <h4>Navigation</h4>
       <ul>
         <li><a href="was-ist-openehr.html">Was ist openEHR?</a></li>
-        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="klinische-modellierung.html">Klinische Modellierung</a></li>
+        <li><a href="software-entwicklung.html">Software-Entwicklung</a></li>
         <li><a href="mitgliedschaft.html">Mitgliedschaft</a></li>
         <li><a href="ueber-uns.html">Über uns</a></li>
       </ul>
